@@ -5,8 +5,10 @@ Network Acoustic Models with Singular Value Decomposition"
 (https://www.microsoft.com/en-us/research/wp-content/uploads/2013/01/svd_v2.pdf). 
 
 # Basic idea
-DNN weight matrices are usually sparse. Using singular value decomposition 
-(SVD), a weight matrix is decomposed into product of two smaller matrices, 
+DNN weight matrices are usually sparse. This property can be exploited to 
+represent a weight matrix with fewer values thus saving storage space and 
+computations. Using singular value decomposition (SVD), 
+a weight matrix is decomposed into product of two smaller matrices, 
 that is, one weight layer is decomposed into cascade of two sub-layers. 
 The first sub-layer carries linear activation function and zero bias, 
 while the second sub-layer carries the activation function and bias values of 
