@@ -13,8 +13,7 @@ while the second sub-layer carries the activation function and bias values of
 the original decomposed layer. More details can be found in the paper. 
 
 # Scripts
-1. run.sh
-
+1. run.sh  
 This is the master script. 
 It takes dnn.nnet.bak file and produces dnn.nnet.svd file. 
 Sample dnn.nnet.bak and dnn.nnet.svd files are provide for reference.
