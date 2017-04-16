@@ -11,7 +11,8 @@ block() { # selects a block of lines
 line()  { # selects a particular line
   head $1 $2 | tail -n 1; }
 
-# The following numbers have to be hard-coded
+# The 1st and 2nd args to block fn, and 1st arg to line fn
+# has to be hard-coded
 block 3 514 dnn.nnet > layer_1
 block 520 775 dnn.nnet > layer_2
 block 781 1292 dnn.nnet > layer_3
