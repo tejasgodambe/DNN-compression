@@ -18,14 +18,16 @@ the original decomposed layer. More details can be found in the paper.
 1. run.sh  
 This is the master script. 
 It takes dnn.nnet.bak file and produces dnn.nnet.svd file. 
-Sample dnn.nnet.bak and dnn.nnet.svd files are provide for reference.
-Set the values of the identifier num_layers, 2nd and 3rd arg of block 
-function, first arg for line function according to your dnn.nnet.bak file. 
+Sample dnn.nnet.bak and dnn.nnet.svd files are provided for reference.
+Set the values for the identifier num_layers, 1st and 2nd args to block 
+function, 1st arg for line function according to your dnn.nnet.bak file. 
+The 1st and 2nd args to the block function and 3rd arg to the line
+function in the provided run.sh script corresponds to the sample dnn.nnet.bak file.
 
 2. svd.py  
 This python script is called by run.sh. It performs the actual SVD operation to
-split the layers into two sub-layers. 
+decompose a layer into two sub-layers. 
 
 3. svd_post_formatting.sh  
-This bash script is called by run.sh. It does the post formatting to 
+This BASH script is called by run.sh. It does the post formatting to 
 construct the final dnn.nnet.svd file for us. 
