@@ -20,10 +20,10 @@ Sample dnn.nnet.bak and dnn.nnet.svd files are provide for reference.
 Set the values of the identifier num_layers, 2nd and 3rd arg of block 
 function, first arg for line function according to your dnn.nnet.bak file. 
 
-2. svd.py 
+2. svd.py  
 This python script is called by run.sh. It performs the actual SVD operation to
 split the layers into two sub-layers. 
 
-3. svd_post_formatting.sh
+3. svd_post_formatting.sh  
 This bash script is called by run.sh. It does the post formatting to 
 construct the final dnn.nnet.svd file for us. 
